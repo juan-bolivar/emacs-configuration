@@ -1,0 +1,6 @@
+* Magit Configuration
+#+BEGIN_SRC emacs-lisp
+
+(global-set-key (kbd "C-x g") 'magit-status)
+
+#+END_SRC
