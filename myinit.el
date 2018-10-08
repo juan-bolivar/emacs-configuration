@@ -3,6 +3,9 @@
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
+(use-package org-gcal
+  :ensure t)
+
 (use-package try
   :ensure t)
 
@@ -533,3 +536,23 @@ ACTIVE-NODES should be compatible with output of `pj--justify'."
 
 (use-package org-pdfview
 :ensure t)
+
+(setq load-path (append (list (expand-file-name "/usr/share/emacs/site-lisp/org")) load-path))
+ 
+(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
+(require 'org-install)
+(require 'org-capture)
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cb" 'org-iswitchb)
+(global-set-key (kbd "<f6>") 'org-capture)
+
+(setq package-check-signature nil)
+
+
+(use-package org-gcal
+:ensure t
+:config
+(setq org-gcal-client-id "955704592233-151cokivsereja5mdlg3kcbmv4kpv56c.apps.googleusercontent.com"
+org-gcal-client-secret "qzGMIb_Tn1aFk3mL3mhnBAdm"
+org-gcal-file-alist '(("jbolivar007@gmail.com" .  "/home/juanma/Desktop/Ruta Ganadora/gcal.org"))))
