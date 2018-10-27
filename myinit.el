@@ -3,6 +3,16 @@
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
+(use-package latex-preview-pane
+  :ensure t)
+
+
+(use-package ido-mode
+  :ensure t)
+
+(use-package ranger
+  :ensure t)
+
 (use-package org-gcal
   :ensure t)
 
@@ -537,6 +547,12 @@ ACTIVE-NODES should be compatible with output of `pj--justify'."
 (use-package org-pdfview
 :ensure t)
 
+(org-babel-do-load-languages
+  'org-babel-load-languages
+  '((R . t)
+   (emacs-lisp t)
+   (python . t)))
+
 (setq load-path (append (list (expand-file-name "/usr/share/emacs/site-lisp/org")) load-path))
  
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
@@ -556,3 +572,35 @@ ACTIVE-NODES should be compatible with output of `pj--justify'."
 (setq org-gcal-client-id "955704592233-151cokivsereja5mdlg3kcbmv4kpv56c.apps.googleusercontent.com"
 org-gcal-client-secret "qzGMIb_Tn1aFk3mL3mhnBAdm"
 org-gcal-file-alist '(("jbolivar007@gmail.com" .  "/home/juanma/Desktop/Ruta Ganadora/gcal.org"))))
+
+(setq text-mode-hook '(lambda() (flyspell-mode t) ))
+(add-hook 'LaTeX-mode-hook 'flyspell-mode)
+(add-hook 'LaTeX-mode-hook 'latex-preview-pane-mode)
+
+(add-to-list 'load-path "~/auctex-version/")
+(add-to-list 'load-path "~/auctex-version/preview/")
+(load "auctex.el" nil t t)
+(load "preview-latex.el" nil t t)
+(setq-default TeX-PDF-mode t)
+
+
+(add-hook 'TeX-after-compilation-finished-functions #'TeX-revert-document-buffer) ;; revert pdf after compile
+(setq TeX-view-program-selection '((output-pdf "PDF Tools"))) ;; use pdf-tools for viewing
+(setq LaTeX-command "latex --synctex=1") ;; optional: enable synctex
+
+(setq auto-mode-alist ‘((“\\.tex$” . LaTeX-mode)
+(“\\.sty$” . LaTeX-mode)
+(“\\.bbl$” . LaTeX-mode)
+(“\\.bib$” . BibTeX-mode)
+(“\\.cls$” . LaTeX-mode)
+(“\\.clo$” . LaTeX-mode)))
+
+(defun run-latex ()
+    (interactive)
+    (let ((process (TeX-active-process))) (if process (delete-process process)))
+    (let ((TeX-save-query nil)) (TeX-save-document ""))
+    (TeX-command-menu "LaTeX"))
+
+(add-hook 'LaTeX-mode-hook (lambda () (local-set-key (kbd "C-x C-s") #'run-latex)))
+
+(setq org-latex-pdf-process (list "latexmk -shell-escape -bibtex -f -pdf %f"))
