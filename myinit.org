@@ -19,8 +19,8 @@
   :ensure t)
 
 
-(use-package ido-mode
-  :ensure t)
+;(use-package ido-mode
+;  :ensure t)
 
 (use-package ranger
   :ensure t)
@@ -729,7 +729,6 @@ org-gcal-file-alist '(("jbolivar007@gmail.com" .  "/home/juanma/Desktop/Ruta Gan
 (add-hook 'LaTeX-mode-hook (lambda () (local-set-key (kbd "C-x C-s") #'run-latex)))
 
 #+END_SRC
-
 
 
 
