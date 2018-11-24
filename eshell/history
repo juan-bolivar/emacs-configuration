@@ -1,0 +1,20 @@
+clear
+python Trading.py 
+clear
+ld
+clear
+ls
+ls Requirements.txt 
+python -m pip install -r Requirements.txt 
+lear
+clear
+sudo python -m pip install -r Requirements.txt 
+python -v
+python --v
+python -version
+python 
+clear
+pip install -r Requirements.txt 
+clear
+sudo pip install -r Requirements.txt 
+python Trading.py 

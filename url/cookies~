@@ -2,19 +2,21 @@
 ;; Automatically generated file!!! DO NOT EDIT!!!
 
 (setq url-cookie-storage
- '((".doi.org"
-  [url-cookie "__cfduid" "d58dd0c082f3e2d3b6e1087d324df89811539705163" "Wed, 16-Oct-19 15:52:43 GMT" "/" ".doi.org" nil])
- (".sciencedirect.com"
-  [url-cookie "EUID" "099a703c-53e4-4409-b94c-a62665a29c3e" "Sat, 16 Oct 2038 15:58:53 GMT" "/" ".sciencedirect.com" nil])
+ '((".scitation.org"
+  [url-cookie "I2KBRCK" "1" "Wed, 16-Oct-2019 15:56:44 GMT" "/" ".scitation.org" nil]
+  [url-cookie "MAID" "tB9x8tD8+tRrnJqF+2cRIQ==" "Mon, 12-Aug-2019 15:56:45 GMT" "/" ".scitation.org" nil]
+  [url-cookie "MACHINE_LAST_SEEN" "2018-10-16T08%3A56%3A45.103-07%3A00" "Mon, 12-Aug-2019 15:56:45 GMT" "/" ".scitation.org" nil])
  ("linkinghub.elsevier.com"
   [url-cookie "visitorId" "v1jUedgk12Gxl9WN0bvD" "Sun Nov 03 14:33:10 2086 GMT" "/" "linkinghub.elsevier.com" nil])
- (".scitation.org"
-  [url-cookie "MACHINE_LAST_SEEN" "2018-10-16T08%3A56%3A45.103-07%3A00" "Mon, 12-Aug-2019 15:56:45 GMT" "/" ".scitation.org" nil]
-  [url-cookie "MAID" "tB9x8tD8+tRrnJqF+2cRIQ==" "Mon, 12-Aug-2019 15:56:45 GMT" "/" ".scitation.org" nil]
-  [url-cookie "I2KBRCK" "1" "Wed, 16-Oct-2019 15:56:44 GMT" "/" ".scitation.org" nil]))
+ (".sciencedirect.com"
+  [url-cookie "EUID" "099a703c-53e4-4409-b94c-a62665a29c3e" "Sat, 16 Oct 2038 15:58:53 GMT" "/" ".sciencedirect.com" nil])
+ (".doi.org"
+  [url-cookie "__cfduid" "d58dd0c082f3e2d3b6e1087d324df89811539705163" "Wed, 16-Oct-19 15:52:43 GMT" "/" ".doi.org" nil]))
 )
 (setq url-cookie-secure-storage
- 'nil)
+ '((".my.fsf.org"
+  [url-cookie "SSESS7edb43c637aa8cdba90ceeac60b1a74d" "UbfkoebOO8F8rKeAubStna0SaknPVAAu8320Yba2BgM" "Sat Dec 01 08:15:17 2018 GMT" "/" ".my.fsf.org" t]))
+)
 
 ;; Local Variables:
 ;; version-control: never

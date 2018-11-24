@@ -6,12 +6,24 @@
 (use-package latex-preview-pane
   :ensure t)
 
-
-(use-package ido-mode
+(use-package ein
   :ensure t)
+
+
+
+(use-package ess
+  :ensure t)
+
+
+;(use-package ido-mode
+;  :ensure t)
 
 (use-package ranger
   :ensure t)
+
+(use-package dracula-theme
+  :ensure t)
+
 
 (use-package org-gcal
   :ensure t)
@@ -59,6 +71,7 @@
 (define-key global-map (kbd "C-c o") 'iedit-mode)
 
 (require 'multiple-cursors)
+
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
@@ -551,7 +564,8 @@ ACTIVE-NODES should be compatible with output of `pj--justify'."
   'org-babel-load-languages
   '((R . t)
    (emacs-lisp t)
-   (python . t)))
+   (python . t)
+   (shell .t)))
 
 (setq load-path (append (list (expand-file-name "/usr/share/emacs/site-lisp/org")) load-path))
  
@@ -562,6 +576,11 @@ ACTIVE-NODES should be compatible with output of `pj--justify'."
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (global-set-key (kbd "<f6>") 'org-capture)
+
+
+
+(setq org-export-latex-listings 'minted)
+(setq org-src-fontify-natively t)
 
 (setq package-check-signature nil)
 
@@ -588,12 +607,31 @@ org-gcal-file-alist '(("jbolivar007@gmail.com" .  "/home/juanma/Desktop/Ruta Gan
 (setq TeX-view-program-selection '((output-pdf "PDF Tools"))) ;; use pdf-tools for viewing
 (setq LaTeX-command "latex --synctex=1") ;; optional: enable synctex
 
-(setq auto-mode-alist ‘((“\\.tex$” . LaTeX-mode)
-(“\\.sty$” . LaTeX-mode)
-(“\\.bbl$” . LaTeX-mode)
-(“\\.bib$” . BibTeX-mode)
-(“\\.cls$” . LaTeX-mode)
-(“\\.clo$” . LaTeX-mode)))
+
+(add-to-list 'auto-mode-alist '("\\.epub\\'" . nov-mode))
+
+(add-to-list 'auto-mode-alist '("\\.sty$" . LaTeX-mode))
+
+(add-to-list 'auto-mode-alist '("\\.bbl$" . LaTeX-mode))
+
+(add-to-list 'auto-mode-alist '("\\.bib$" . BibTeX-mode))
+
+(add-to-list 'auto-mode-alist '("\\.cls$" . LaTeX-mode))
+
+(add-to-list 'auto-mode-alist '("\\.clo$" . LaTeX-mode))
+
+
+
+
+
+
+
+;
+;("\\.bbl$" . LaTeX-mode)
+;
+;
+;
+;(setq auto-mode-alist '
 
 (defun run-latex ()
     (interactive)
@@ -604,3 +642,7 @@ org-gcal-file-alist '(("jbolivar007@gmail.com" .  "/home/juanma/Desktop/Ruta Gan
 (add-hook 'LaTeX-mode-hook (lambda () (local-set-key (kbd "C-x C-s") #'run-latex)))
 
 (setq org-latex-pdf-process (list "latexmk -shell-escape -bibtex -f -pdf %f"))
+
+(require 'ein)
+(require 'ein-notebook)
+(require 'ein-subpackages)
