@@ -1,20 +1,128 @@
+youtube-dl https://www.youtube.com/watch?v=MHIpm9NUdUM
+cat /home/juanma/R/x86_64-pc-linux-gnu-library/3.5/readr/extdata/challenge.csv
+cat /home/juanma/R/x86_64-pc-linux-gnu-library/3.5/readr/extdata/challenge.csv > example.csv
+cat example.csv 
 clear
-python Trading.py 
+R
+R
+R
+sudo pacman -S i3lock
+cd ~
 clear
-ld
+pacman -S feh
+sudo pacman -S feh
+ls
+cd Desktop/
 clear
 ls
-ls Requirements.txt 
-python -m pip install -r Requirements.txt 
-lear
+feh --bg-scale proxy.duckduckgo.com.jpg 
 clear
-sudo python -m pip install -r Requirements.txt 
-python -v
-python --v
-python -version
+xrandR
+xrandr
+arandr
+clear
+youtube-dl https://www.youtube.com/watch?v=MHIpm9NUdUM
+Deleting original file Ricardo Hausmann - Sense of Us-MHIpm9NUdUM.f137.mp4 (pass -k to keep)
+neofetch
+cd ~
+clear
+cd aplicaciones/
+clear
+git clone https://github.com/StevenBlack/hosts.git
+clear
+ls
+cd hosts
+ls
+python3
+pip3 install --user -r requirements.txt 
+sudo pip3 install --user -r requirements.txt 
+clear
+python3 testUpdateHostsFile.py 
+python updateHostsFile.py
+clear
+cd ~
+clear
+cd Fuzzy_Logic/
+youtube-dl -i https://www.youtube.com/watch?v=a2i-lHS-c_I&list=PLIY8eNdw5tW9ZqgI9nfXxr6r-FHnLS90k&index=1
+Deleting original file Fuzzy Logic Tutorials _ Introduction to Fuzzy Logic, Fuzzy Sets & Fuzzy Set Operations-a2i-lHS-c_I.f251.webm (pass -k to keep)
+Deleting original file Fuzzy Logic Tutorials _ Introduction to Fuzzy Logic, Fuzzy Sets & Fuzzy Set Operations-a2i-lHS-c_I.f251.webm (pass -k to keep)
+clear
+youtube-dl -i https://www.youtube.com/watch?v=a2i-lHS-c_I&list=PLIY8eNdw5tW9ZqgI9nfXxr6r-FHnLS90k&index=1
+clear
+youtube-dl https://www.youtube.com/watch?v=a2i-lHS-c_I&list=PLIY8eNdw5tW9ZqgI9nfXxr6r-FHnLS90k&index=1
+clear
+youtube-dl https://www.youtube.com/watch?v=a2i-lHS-c_I&list=PLIY8eNdw5tW9ZqgI9nfXxr6r-FHnLS90k&index=1
+clear
+youtube-dl -i -t https://www.youtube.com/playlist?list=PLIY8eNdw5tW9ZqgI9nfXxr6r-FHnLS90k
+clear
+ranger
+ls
+cd Documents/
+cd youtube/
+clear
+ls
+mkdir fuzzy_set
+clear
+cd Fu
+cd fuzzy_set/
+clear
+youtube-dl -f best -ciw -o "%(title)s.%(ext)s" -v https://www.youtube.com/channel/UCEsAtWBMIvDTnrPH7Yn82wA/videos
+clear
+sudo emacs 
+ssh juanma@juanbolivar.sytes
+ssh juanma@104.248.132.188
+wallpapers.sh
+./wallpaper.sh
+./wallpaper.sh
+./wallpaper.sh
+./wallpaper.sh
+./wallpaper.sh
+./wallpaper.sh
+./wallpaper.sh
+clear
+clear
+clear
+grep
+grep -h
+man grep
+clear
+man ed
+clear
+./wallpaper.sh
+./wallpaper.sh
+reboot
+~/.config/i3/scripts/calendar.sh
+cd ~/.config/i3/scripts/
+ls
+cd ..
+ls
+~/.config/i3/i3blocks_scripts/calendar.sh
+chmod +x ~/.config/i3/i3blocks_scripts/calendar.sh
+~/.config/i3/i3blocks_scripts/calendar.sh
+~/.config/i3/i3blocks_scripts/calendar.sh
+~/.config/i3/i3blocks_scripts/calendar.sh
+sudo pacman -S yad
+yaourt yad
+clear
+yaourt yad 
+clear
+clear
+cd ~
+clear
+sudo mysql -u root -p 
+sudo mysql -u root
+sudo mysql -u root
+clear
+sudo mysql -u root 
+clea
+clear
+python prueba.py 
+clear
+clear
+man yta
+man yt
+man youtube-dl
 python 
 clear
-pip install -r Requirements.txt 
 clear
-sudo pip install -r Requirements.txt 
-python Trading.py 
+clear

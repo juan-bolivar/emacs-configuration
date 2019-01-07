@@ -1,1 +1,2 @@
+alias nil  $*
 alias ee find-file-other-window $1

@@ -6,9 +6,18 @@
 (use-package latex-preview-pane
   :ensure t)
 
+
+(use-package emojify
+  :ensure t)
+
 (use-package ein
   :ensure t)
 
+;; (use-package skewer
+;;   :init ((add-hook 'js2-mode-hook 'skewer-mode)
+;;          (add-hook 'css-mode-hook 'skewer-css-mode)
+;; 	 (add-hook 'html-mode-hook 'skewer-html-mode))
+;;   :ensure t)
 
 
 (use-package ess
@@ -563,6 +572,7 @@ ACTIVE-NODES should be compatible with output of `pj--justify'."
 (org-babel-do-load-languages
   'org-babel-load-languages
   '((R . t)
+   (sql . t)
    (emacs-lisp t)
    (python . t)
    (shell .t)))

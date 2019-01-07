@@ -13,74 +13,77 @@
 
 #+BEGIN_SRC emacs-lisp
 
-(fset 'yes-or-no-p 'y-or-n-p)
+  (fset 'yes-or-no-p 'y-or-n-p)
 
-(use-package latex-preview-pane
-  :ensure t)
-
-(use-package ein
-  :ensure t)
-
-(use-package skewer
-  :init ((add-hook 'js2-mode-hook 'skewer-mode)
-         (add-hook 'css-mode-hook 'skewer-css-mode)
-	 (add-hook 'html-mode-hook 'skewer-html-mode))
-  :ensure t)
+  (use-package latex-preview-pane
+    :ensure t)
 
 
+  (use-package emojify
+    :ensure t)
 
-(use-package ess
-  :ensure t)
+  (use-package ein
+    :ensure t)
 
-
-;(use-package ido-mode
-;  :ensure t)
-
-(use-package ranger
-  :ensure t)
-
-(use-package dracula-theme
-  :ensure t)
+  ;; (use-package skewer
+  ;;   :init ((add-hook 'js2-mode-hook 'skewer-mode)
+  ;;          (add-hook 'css-mode-hook 'skewer-css-mode)
+  ;; 	 (add-hook 'html-mode-hook 'skewer-html-mode))
+  ;;   :ensure t)
 
 
-(use-package org-gcal
-  :ensure t)
-
-(use-package try
-  :ensure t)
+  (use-package ess
+    :ensure t)
 
 
-(use-package org-beautify-theme
-  :ensure t)
-(use-package dash-functional
-  :ensure t)
+  ;(use-package ido-mode
+  ;  :ensure t)
+
+  (use-package ranger
+    :ensure t)
+
+  (use-package dracula-theme
+    :ensure t)
 
 
-  (use-package nov
-  :ensure t)
+  (use-package org-gcal
+    :ensure t)
+
+  (use-package try
+    :ensure t)
 
 
-(use-package f
-  :ensure t)
+  (use-package org-beautify-theme
+    :ensure t)
+  (use-package dash-functional
+    :ensure t)
 
 
-(use-package helm
-  :ensure t)
+    (use-package nov
+    :ensure t)
 
-(use-package org-bullets
-  :ensure t)
 
-(use-package elpy
-  :ensure t)
+  (use-package f
+    :ensure t)
 
-(use-package elpy
-  :ensure t)
 
-;(use-package pyvenv-mode
-;  :ensure t)
+  (use-package helm
+    :ensure t)
 
-(use-package multiple-cursors
-  :ensure t)
+  (use-package org-bullets
+    :ensure t)
+
+  (use-package elpy
+    :ensure t)
+
+  (use-package elpy
+    :ensure t)
+
+  ;(use-package pyvenv-mode
+  ;  :ensure t)
+
+  (use-package multiple-cursors
+    :ensure t)
 
   
 
@@ -660,6 +663,7 @@ ACTIVE-NODES should be compatible with output of `pj--justify'."
 (org-babel-do-load-languages
   'org-babel-load-languages
   '((R . t)
+   (sql . t)
    (emacs-lisp t)
    (python . t)
    (shell .t)))

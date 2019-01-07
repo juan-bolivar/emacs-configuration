@@ -5,16 +5,19 @@
       '(
 	LaTeX-insert-left-brace
 	TeX-insert-backslash
+	comment-dwim
 	elpy-nav-backward-indent
 	elpy-nav-forward-indent
 	ess-indent-or-complete
 	indent-for-tab-command
 	markdown-outdent-or-delete
 	org-beginning-of-line
+	org-comment-dwim
 	org-ctrl-c-ctrl-c
 	org-cycle
 	org-demote-subtree
 	org-end-of-line
+	org-export-dispatch
 	org-kill-line
 	org-self-insert-command
 	))
