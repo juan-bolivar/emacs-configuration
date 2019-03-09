@@ -6,6 +6,8 @@
 (use-package latex-preview-pane
   :ensure t)
 
+(use-package evil
+  :ensure t)
 
 (use-package emojify
   :ensure t)
@@ -59,6 +61,10 @@
   :ensure t)
 
 (use-package org-bullets
+  :ensure t)
+
+
+(use-package excorporate
   :ensure t)
 
 (use-package elpy
@@ -602,9 +608,9 @@ ACTIVE-NODES should be compatible with output of `pj--justify'."
 org-gcal-client-secret "qzGMIb_Tn1aFk3mL3mhnBAdm"
 org-gcal-file-alist '(("jbolivar007@gmail.com" .  "/home/juanma/Desktop/Ruta Ganadora/gcal.org"))))
 
-(setq text-mode-hook '(lambda() (flyspell-mode t) ))
-(add-hook 'LaTeX-mode-hook 'flyspell-mode)
-(add-hook 'LaTeX-mode-hook 'latex-preview-pane-mode)
+;(setq text-mode-hook '(lambda() (flyspell-mode t) ))
+;(add-hook 'LaTeX-mode-hook 'flyspell-mode)
+;(add-hook 'LaTeX-mode-hook 'latex-preview-pane-mode)
 
 (add-to-list 'load-path "~/auctex-version/")
 (add-to-list 'load-path "~/auctex-version/preview/")
@@ -656,3 +662,27 @@ org-gcal-file-alist '(("jbolivar007@gmail.com" .  "/home/juanma/Desktop/Ruta Gan
 (require 'ein)
 (require 'ein-notebook)
 (require 'ein-subpackages)
+
+;; configure excorporate
+;; allow opening the exchange calendar with 'e' from calendar 
+(evil-define-key 'motion calendar-mode-map "e" #'exco-calendar-show-day)
+
+(setq-default
+ ;; configure email address and office 365 exchange server adddress for exchange web services
+ excorporate-configuration
+  (quote
+   ("jbolivarm@sura.com.co" . "https://outlook.office365.com/EWS/Exchange.asmx"))
+  ;; integrate emacs diary entries into org agenda
+  org-agenda-include-diary t
+  )
+;; activate excorporate and request user/password to start connection
+(excorporate)
+;; enable the diary integration (i.e. write exchange calendar to emacs diary file -> ~/.emacs.d/diary must exist)
+(excorporate-diary-enable)
+(defun ab/agenda-update-diary ()
+  "call excorporate to update the diary for today"
+  (exco-diary-diary-advice (calendar-current-date) (calendar-current-date) #'message "diary updated")
+  )
+
+;; update the diary every time the org agenda is refreshed
+(add-hook 'org-agenda-cleanup-fancy-diary-hook 'ab/agenda-update-diary )

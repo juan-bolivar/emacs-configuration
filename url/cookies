@@ -14,7 +14,9 @@
   [url-cookie "__cfduid" "d58dd0c082f3e2d3b6e1087d324df89811539705163" "Wed, 16-Oct-19 15:52:43 GMT" "/" ".doi.org" nil]))
 )
 (setq url-cookie-secure-storage
- '((".github.com"
+ '(("outlook.office365.com"
+  [url-cookie "EXOBasicAuth" "compactTicket=t%3dEwAQA9P5AwAUv0lYxoez7x2t6RowHa2liVeLW%2fwAAVGRtmyhyW9sy2VlTNT4C43OEfh4gN90EW4NW2npMGHo8ycwDGm7S%2fa1fhh68i3fNM8xHh5r9mekhYJfx1VZSaizvlkUtuoxRxMoeWsqCYeFbJLKuZESAZZCoXs3hbgrWRIpKv3VWkqxgDS41cImFy8L7V0Tn%2fpuA2XLs0XrzHafvA2pvvfO7Xs%2bTV4VCfTLTKl%2fbq9ZfeEy0WtdrvK4n6i61Gy%2bzg9GtSyXV1FFaXqGC5XcakA%2bZhMwDgfTXQnE5LcbLXh1msYKEeXhce25j8Z8WeepvcsiChMmPuP3ipwwz%2flalufaQmMkShzOFizq0DOdSzZht6h0OqWejnfxYmsDZgAACENbabKR1d%2f04AFpdLQ0%2fUU%2ff%2bgOxx3uE0dtjFNBft02f1Uy44MTaO0HcMjQn9XRRsexFz5to7LPN%2beKK0vugzeRdQQrJ6d9wECmc4Fh%2bwTY7GAHvMBsVRfYyM0N%2fbFVDstQV6RpynJ5D4EjxH%2bxu9zPXujO3WS7y%2f%2bRkeLdsUo0o8yVeEKAIQpy6qeT%2bvqdhG5R1F%2b7vgdCTsVuckX128J%2bQZU%2bzoNoflWfuXRnu5wLzDp6H2pCtZ43LUOn845n6dtdC%2f7DVCo9VmfDt1hfQL8Oz5aNW2abuQlaklVSAYHwhV8%2bRwu%2f2y9ZLjvXdkQPkG2Vw4xJzZByY1wQNbX2Zz7ludju1LZzvA%2fAwaSJyxYlNCAsOLjC30WCsePHUZbKFdHTcKKjHQr5AzCyhJgB6ix7VKQw1sM7XGllSQpKWp7PdS%2f61q3hp6IQjAoFaNLXh9F1mUizSnItmbu%2b9teEGWgXWYwh3moeAtUdqCEK%2fYKUlqunQ%2ftYpLHddi2N6Xaw4WevqefZeRSkJsKe2Bfxm4ahXR8vq9sN50zXcHwwJXAVesGdT2k7VCUzI1WrIakOXWIQs81UU6Ao4TaZo3ry1koUVbLYC3BXf1yv23s6ewF92YMbwRw27Sfp0d9PJqSqfPkgR6F%2bP0%2btIqRAAg%3d%3d%26amp%3bp%3d&key=jbolivarm%40sura.com.co+microsoft.exchange.webservices+191.91.161.153+&signature=Qu9KL/1V5enEBWhF7EQDrN+r9tsmZ+8m8IMyXwi5qXLSjT1boCSgksXTye/DLiLsj7j6xSNVAScN8br1Z3Ln93Qs44lAsvtarxMngrAWmQsbpesg8BIHOuySj+zOr2NKq6/ZqpH+fme8W/I+DWq318dYmj7PbnRmXE+olXRA2E5uHGdSw370zLmpZG+akIDIEAhHJg6iXDwj8fiARhfxUFjrI/R9oV0dr1VBXtb82x6EFmjnjVVSBrNLaGYAaHc4UX2DeXc0ceIDFUVX3ap0PswJ0vfal2SrgSOlalpP2jNE1Lcmj9pVvP8SwA3fxCqUBtS+cBvEPZ2hOjnSX9QgrA==&puid=10032000346D29E1&expireTime=636870420100000000&membername=jbolivarm%40sura.com.co&flags=False&userType=ManagedBusiness&ageGroup=0" "Fri, 01-Mar-2019 13:00:10 GMT" "/EWS" "outlook.office365.com" t])
+ (".github.com"
   [url-cookie "logged_in" "no" "Fri, 10 Dec 2038 20:27:53 -0000" "/" ".github.com" t]))
 )
 

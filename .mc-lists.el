@@ -18,6 +18,7 @@
 	org-demote-subtree
 	org-end-of-line
 	org-export-dispatch
+	org-force-self-insert
 	org-kill-line
 	org-self-insert-command
 	))

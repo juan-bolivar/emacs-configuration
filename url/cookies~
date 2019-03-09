@@ -14,8 +14,10 @@
   [url-cookie "I2KBRCK" "1" "Wed, 16-Oct-2019 15:56:44 GMT" "/" ".scitation.org" nil]))
 )
 (setq url-cookie-secure-storage
- '((".my.fsf.org"
-  [url-cookie "SSESS7edb43c637aa8cdba90ceeac60b1a74d" "UbfkoebOO8F8rKeAubStna0SaknPVAAu8320Yba2BgM" "Sat Dec 01 08:15:17 2018 GMT" "/" ".my.fsf.org" t]))
+ '((".github.com"
+  [url-cookie "logged_in" "no" "Fri, 10 Dec 2038 20:27:53 -0000" "/" ".github.com" t])
+ ("outlook.office365.com"
+  [url-cookie "EXOBasicAuth" "compactTicket=t%3dEwAYA9P5AwAUv0lYxoez7x2t6RowHa2liVeLW%2fwAAbRnhA4Bh8CCTsjdUs0DwIsae1yQOGWeKv5pyW664TeFz7k1TAnzK%2bQGCqDbkIHFAPHwCmVPBqsrB83EUwe6p1Y5JfhtHu5wRDouKowOHcImJIVOb4USRiiB9H4Ew7AbpkGpRjZPA4oCDoM2omiwrXJUvzfECNd2u0OM8zSrJuh%2bYwZGQCuX%2ffkwNLhfZ%2f%2f50M6SBhmY3Inp0NE08uYOMI106ncM%2bpRvPGYWPsHu%2bv1WLZuq%2f4CvOzzlsaLu6xa%2bIMPnc0%2fkfM9TtIaeaEXYGQoxRWE2wti8uZAjeDP15jk%2bOaLp809pNVa9PHK%2blIk4%2fj8X4z74eaiIQQQANG%2bH5YYDZgAACB1wKbuIP2s86AGVh7%2fWFqqaXjNmb4sOop4XUlBgadIz6cy2rnNXUSBdsF%2fZ2qKhcljOBymCDE37BdBTfHM4zjFidNTW8gtkK%2bJxUkAi6uQeQLJ7uCdmSNfLvE%2bqP3SQRxTUvJOn7tM2e%2fmy0ase%2bL6izlYe8cxjVxUv0YGbw4STG3FUV9KR%2bcZZjkZL4EPJQhCyHiHiVykIkzdmgJPk%2bY6Fdfhny81cY2cUDuYr9MbdjG%2bBWABlGmqNyje93ED4sqYMYNoonrTyigtwl0uN6iBT8NpxrcxBx68H6yr8HWNd0KPKuuPSNEviiEV8qA%2fxnBuYeLVeSqsWxzVmpk%2f018mkRFaL7GoLxzkt77UoEYta1badAoCSzVqWHCEnCgVPrkH5JYe5aiHwA18qeMp%2fKmg6cmPvjpcBA4Xe20DWm6l%2bzXCJkmRgwsyJwD2%2fxSlWmXYVJtn7b2qyTqdF15dr%2bBqKD455EVkGqpn4WP7uyydq2mwfIg0Wu3EyEHkxl1i4V9e6ciH2DyGo2i0Xxt4ed7W2emm1oEk1eYiV8NE2u0L3wHaW0wfBTlw0pQR1LZRa2%2fD2hx5tSAx0jpyOOG%2bTbfHmaSFNGPQfDSoHyrj3a872dcNFIF8ScnPkCxbRn%2fdsCAD2G6BnJpOT6%2bIdcYp2a3%2bEsUUC%26amp%3bp%3d&key=jbolivarm%40sura.com.co+microsoft.exchange.webservices+2800%3ae7%3a10c%3a4000%3a%3a2+&signature=Kgh+gjSEp9mgqGoM1oWyAgDxZwlce4ilmHT1fwdcCLFyUq0vg0EohqHvEr6HSlUbeMMj4XfqB34o3x2NFrWA8uJmWxAT8eeib/kKFa+syC7a7uPlOHZ3bji3V2aBG1lW0K7C5Ffjh7Xi01UECI9s+xczNFdeEAzcK+cGbzFTW2gl3m6m2qdLISsb2CBg87ONmrQ0hqG6CaTPJKpc9FyqGTrXcJ1w5PGUEncORmm14rZ/wWUZGuqmN6PJdjypX6HEth3IUiTsGvK0EOLKM1TpwQw6EqQmFskrikpFpXbNv+UNKirl/skuzCgca2FcfM78k7qkNwsO3auwV+MBShrtrg==&puid=10032000346D29E1&expireTime=636864012450000000&membername=jbolivarm%40sura.com.co&flags=False&userType=ManagedBusiness&ageGroup=0" "Fri, 22-Feb-2019 03:00:45 GMT" "/EWS" "outlook.office365.com" t]))
 )
 
 ;; Local Variables:

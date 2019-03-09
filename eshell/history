@@ -1,20 +1,3 @@
-youtube-dl https://www.youtube.com/watch?v=MHIpm9NUdUM
-cat /home/juanma/R/x86_64-pc-linux-gnu-library/3.5/readr/extdata/challenge.csv
-cat /home/juanma/R/x86_64-pc-linux-gnu-library/3.5/readr/extdata/challenge.csv > example.csv
-cat example.csv 
-clear
-R
-R
-R
-sudo pacman -S i3lock
-cd ~
-clear
-pacman -S feh
-sudo pacman -S feh
-ls
-cd Desktop/
-clear
-ls
 feh --bg-scale proxy.duckduckgo.com.jpg 
 clear
 xrandR
@@ -126,3 +109,20 @@ python
 clear
 clear
 clear
+git commit .
+git push 
+clear
+$(echo "/" )
+$(echo "/" )
+$(echo "'/'" )
+bash $(echo "'/'" )
+$(echo "'/'" )
+$(echo "'/'" )
+echo 1
+echo "/"
+echo "/" | cd
+clear
+$("'/'" )
+$(echo "/" )
+$(echo "//" )
+$(echo "//" )

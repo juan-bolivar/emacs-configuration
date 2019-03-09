@@ -1,2 +1,4 @@
-alias nil  $*
+alias no  $*
+alias Symbol’s function definition is void: echo no $*
 alias ee find-file-other-window $1
+alias nil $*

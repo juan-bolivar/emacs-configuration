@@ -15,10 +15,12 @@
 /etc
 ~
 /sudo:root@archlinux:/etc
-/home/juanma/.config/i3/scripts
 /home/juanma/.config/i3
 /home/juanma
 /home/juanma/Learning/SQL
 /home/juanma
 /home/juanma/scripts/arlo
 ~/.config/i3
+/home/juanma/.emacs.d
+/home/juanma/.config/i3/scripts
+/home/juanma
